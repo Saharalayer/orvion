@@ -1,0 +1,173 @@
+export default function OrvionLandingPage() { return ( <div className="min-h-screen bg-black text-white font-sans overflow-hidden"> {/* HERO SECTION */} <section className="relative flex flex-col items-center justify-center text-center px-6 py-28"> <div className="absolute inset-0 bg-gradient-to-b from-indigo-600/20 to-transparent blur-3xl"></div>
+
+<div className="relative z-10 max-w-5xl mx-auto">
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur mb-6 text-sm text-gray-300">
+        <span>AI-Powered Human API Platform</span>
+      </div>
+
+      <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight">
+        Become
+        <span className="block bg-gradient-to-r from-white via-gray-300 to-indigo-400 bg-clip-text text-transparent">
+          Programmable
+        </span>
+      </h1>
+
+      <p className="mt-8 text-lg md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+        Orvion transforms people into intelligent digital entities using AI agents,
+        smart identity, automation, and autonomous workflows.
+      </p>
+
+      <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition-all duration-300 shadow-2xl">
+          Join The Beta
+        </button>
+
+        <button className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 backdrop-blur hover:bg-white/10 transition-all duration-300">
+          Watch Demo
+        </button>
+      </div>
+
+      <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+        {[
+          "AI Agents",
+          "Digital Identity",
+          "Automation",
+          "Smart Profiles",
+        ].map((item) => (
+          <div
+            key={item}
+            className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur"
+          >
+            <p className="text-sm text-gray-400">Core Technology</p>
+            <h3 className="mt-2 text-lg font-semibold">{item}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* FEATURES */}
+  <section className="px-6 py-24 max-w-7xl mx-auto">
+    <div className="text-center max-w-3xl mx-auto">
+      <p className="uppercase tracking-[0.3em] text-indigo-400 text-sm">
+        Future Infrastructure
+      </p>
+
+      <h2 className="mt-4 text-4xl md:text-6xl font-black">
+        Your AI Layer
+      </h2>
+
+      <p className="mt-6 text-gray-400 text-lg">
+        Orvion creates a programmable digital version of yourself capable of
+        interacting, automating, and executing tasks intelligently.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8 mt-20">
+      {[
+        {
+          title: "Smart Identity",
+          desc: "A dynamic digital profile that understands your goals, skills, behavior, and opportunities.",
+        },
+        {
+          title: "AI Agents",
+          desc: "Autonomous assistants that work for you 24/7 across communication, research, and productivity.",
+        },
+        {
+          title: "Opportunity Engine",
+          desc: "Find clients, jobs, leads, and connections automatically using intelligent matching.",
+        },
+        {
+          title: "Human API",
+          desc: "Allow systems and platforms to interact with your digital identity securely and intelligently.",
+        },
+        {
+          title: "Workflow Automation",
+          desc: "Automate repetitive tasks and daily operations using advanced AI workflows.",
+        },
+        {
+          title: "Memory Intelligence",
+          desc: "Persistent AI memory that adapts to your communication style and preferences.",
+        },
+      ].map((feature) => (
+        <div
+          key={feature.title}
+          className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-8 hover:border-indigo-500/50 transition-all duration-300"
+        >
+          <h3 className="text-2xl font-bold">{feature.title}</h3>
+          <p className="mt-4 text-gray-400 leading-relaxed">{feature.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* HOW IT WORKS */}
+  <section className="px-6 py-24 bg-white/[0.03] border-y border-white/10">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center">
+        <p className="uppercase tracking-[0.3em] text-indigo-400 text-sm">
+          How It Works
+        </p>
+        <h2 className="mt-4 text-4xl md:text-6xl font-black">
+          Build Your Digital Self
+        </h2>
+      </div>
+
+      <div className="grid md:grid-cols-4 gap-8 mt-20">
+        {[
+          "Create Your Smart Profile",
+          "Connect Your Data & Tools",
+          "Activate AI Agents",
+          "Automate Your Digital Life",
+        ].map((step, index) => (
+          <div
+            key={step}
+            className="relative rounded-3xl border border-white/10 bg-black/40 p-8"
+          >
+            <div className="text-5xl font-black text-indigo-500/40">
+              0{index + 1}
+            </div>
+
+            <h3 className="mt-6 text-2xl font-bold leading-snug">
+              {step}
+            </h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section className="px-6 py-32 text-center relative overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 via-purple-500/10 to-cyan-500/20 blur-3xl"></div>
+
+    <div className="relative z-10 max-w-4xl mx-auto">
+      <h2 className="text-4xl md:text-7xl font-black leading-tight">
+        The Future Is
+        <span className="block text-indigo-400">Already Starting.</span>
+      </h2>
+
+      <p className="mt-8 text-xl text-gray-300 leading-relaxed">
+        Join Orvion and build the next generation of human intelligence,
+        automation, and AI interaction.
+      </p>
+
+      <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+        <button className="px-10 py-5 rounded-2xl bg-indigo-500 hover:bg-indigo-400 transition-all duration-300 font-semibold text-lg shadow-2xl shadow-indigo-500/30">
+          Get Early Access
+        </button>
+
+        <button className="px-10 py-5 rounded-2xl border border-white/20 bg-white/5 backdrop-blur hover:bg-white/10 transition-all duration-300 text-lg">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </section>
+
+  {/* FOOTER */}
+  <footer className="border-t border-white/10 px-6 py-10 text-center text-gray-500 text-sm">
+    © 2026 Orvion — Human API Infrastructure.
+  </footer>
+</div>
+
+); }
